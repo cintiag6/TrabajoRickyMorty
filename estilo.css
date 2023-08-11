@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    
+}
+
+.titulo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 70px;
+	max-width: 200;
+	min-height: 100px;
+	border: 100px;
+	background-color: black;
+	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#cajita {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 100px;
+	font-family: sans-serif;
+    
+}
+
+#cajita #personaje {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	padding: 20px; 
+	margin: 20px; 
+	border: 1px solid #ccc;
+	width: 300px; 
+	height: 600px; 
+	border-radius: 10px; 
+	background-color: #ffffff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.4s; 
+	box-sizing: border-box; 
+	overflow: hidden; 
+    cursor: pointer;
+    
+}
+
+#cajita #personaje:hover {
+	box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-3%);
+    filter: grayscale(80%);
+}
+
+#cajita #personaje h2 {
+	margin-top: 10px;
+	margin-bottom: 20px; 
+	color: #333;
+	overflow: hidden;
+}
+
+#cajita #personaje p {
+	flex-grow: 1; 
+	margin-bottom: 10px; 
+	color: #666;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#botones {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 2%;
+}
+
+#botones button {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 30px; 
+	background-color: #000; 
+	color: #ffffff; 
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#botones button:hover {
+	background-color: #58a0d9; 
+	color: #ffffff; 
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#botones-paginado {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 2%;
+}
+
+#botones-paginado button {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px; 
+	background-color: #000; 
+	color: #fff; 
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-right: 5px;
+}
+
+#botones-paginado button:hover {
+	background-color: #58a0d9; 
+	color: #fff; 
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+#botones-paginado button:disabled{background-color: #666;
+    color: #000;
+    box-shadow: #000;
+    cursor: not-allowed;
+    pointer-events: none;
+    
+}
+
+
+@media (max-width: 1000px) {
+	#botones {
+		margin-left: 20%;
+		margin-right: 20%;
+    
+	}
+
+	#botones button {
+		margin-right: 5px;
+		font-size: 16px;
+	}
+
+  #cajita{
+   justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #botones {
+    margin-top: 30px;
+		margin-left: 5%;
+		margin-right: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+	}
+
+  #botones button{
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  #cajita{
+    padding: 0;
+   }
+
+   #botones-paginado {
+    margin: 30px;
+   }
+
+}
+
+footer{ 
+    background-color: black;
+    padding: 20px;
+    text-align:center;
+    color: white;
+}
+
+p{display: block;
+    margin-inline-start: 40px;
+    justify-content: center;
+	font-weight:bold;
+	word-spacing: 3px;}
